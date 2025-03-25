@@ -94,8 +94,15 @@ a.social-icon {
 }
 
 .hero {
-    background-image: url('../images/raftimage.jpg');
+    background-image: url('../images/african_travels_rafting.jpg');
     /* or another suitable image */
     background-size: cover;
     background-position: center;
+}
+
+.hero h1 {
+    color: var(--secondary-color);
+    /* Warm Orange (Adventure) */
+    font-size: 3rem;
+    font-weight: bold;
 }
