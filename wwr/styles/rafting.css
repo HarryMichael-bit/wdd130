@@ -1,4 +1,12 @@
 /* Global styles */
+:root {
+    --primary-color: #0074D9;
+    --secondary-color: #FF851B;
+    --footer-color: #001f3f;
+    --text-color-light: #ffffff;
+    --text-color-dark: #000000;
+}
+
 body {
     font-family: 'Merriweather', serif;
     margin: 0;
@@ -35,15 +43,28 @@ nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-color: #0074D9;
-    color: white;
-    padding: 20px;
+    position: relative; 
+    background-image: url('../images/african_travels_rafting.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color-light);
     text-align: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .hero-content {
     max-width: 600px;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .hero-image {
@@ -73,36 +94,30 @@ nav ul li a {
 .adventure-images img {
     max-width: 18%;
     margin: 10px;
+    float: left; 
 }
 
 /* Footer */
 footer {
-    background-color: #001f3f;
-    color: white;
-    padding: 10px 0;
+    background-color: var(--footer-color);
+    color: var(--text-color-light);
+    padding: 20px;
     text-align: center;
 }
 
 .social-links img {
     width: 30px;
     margin: 0 5px;
+    text-decoration: underline; 
 }
 
-a.social-icon {
-    text-decoration: none;
-    /* This removes the underline */
+.social-links a {
+    color: var(--text-color-light);
+    text-decoration: underline; 
 }
 
-.hero {
-    background-image: url('../images/african_travels_rafting.jpg');
-    /* or another suitable image */
-    background-size: cover;
-    background-position: center;
-}
-
-.hero h1 {
-    color: var(--secondary-color);
-    /* Warm Orange (Adventure) */
-    font-size: 3rem;
-    font-weight: bold;
+/* Additional improvements */
+a.social-icon:hover {
+    text-decoration: none; 
+    opacity: 0.8; 
 }
