@@ -15,6 +15,7 @@ body {
 }
 
 header {
+    font-family: 'Merriweather', serif;
     background-color: #5D89BA;
     color: white;
     padding: 10px 0;
@@ -41,9 +42,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+
 /* Hero Section */
 .hero {
-    position: relative; 
+    position: relative;
     background-image: url('../images/african_travels_rafting.jpg');
     background-size: cover;
     background-position: center;
@@ -53,6 +55,7 @@ nav ul li a {
 }
 
 .hero h1 {
+    font-family: 'Merriweather', serif;
     color: var(--secondary-color);
     font-size: 3rem;
     font-weight: bold;
@@ -62,13 +65,14 @@ nav ul li a {
 .hero-content {
     max-width: 600px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
 
-.hero-image {
-    max-width: 70%;
+.hero image {
+    display: block;
+    width: 100%;
     height: auto;
 }
 
@@ -78,6 +82,44 @@ nav ul li a {
     padding: 20px;
     text-align: center;
 }
+
+.history-image {
+    float: centre;
+    /* Align the image to the centre */
+    margin: 10px;
+    /* Add some space around the image */
+    width: 100%;
+    /* Adjust the size of the image */
+    border-radius: 20px;
+    /* Optional: rounded corners */
+}
+
+/* History Section */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+    /* Space between elements */
+}
+
+.text-left,
+.text-right {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color-dark);
+    text-align: justify;
+}
+
+.history-image {
+    max-width: 100%;
+    margin: 0 auto;
+    /* Center the image */
+    border-radius: 10px;
+    /* Optional rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for elegance */
+}
+
 
 /* Adventure Section */
 .adventure {
@@ -94,8 +136,10 @@ nav ul li a {
 .adventure-images img {
     max-width: 18%;
     margin: 10px;
-    float: left; 
+    float: left;
 }
+
+/* The following CSS selector (rule) removes underlines from all hyperlinks. Do not do this.*/
 
 /* Footer */
 footer {
@@ -108,16 +152,89 @@ footer {
 .social-links img {
     width: 30px;
     margin: 0 5px;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .social-links a {
     color: var(--text-color-light);
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
-/* Additional improvements */
-a.social-icon:hover {
-    text-decoration: none; 
-    opacity: 0.8; 
+/* Header with CSS Grid */
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+}
+
+header .logo {
+    max-width: 150px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--text-color-light);
+    text-decoration: none;
+}
+
+/* Adventure Section */
+.adventure-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center;
+    text-align: center;
+}
+
+.adventure-images figure {
+    margin: 0;
+}
+
+.adventure-images img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.adventure-images figcaption {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color-dark);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Footer Styling */
+footer .social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
+}
+
+.social-links img {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: inherit;
 }
