@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Asamoah">
+    <meta name="description"
+        content="Get in touch with White Water Rafting! Contact us for reservations, inquiries, or suggestions about your next rafting adventure.">
+    <title>Contact Us | White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logoz-splash.jpg" alt="Michaelsons Company Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>Feel the rush, embrace the beauty, and discover why we are the #1 White Water Rafting Company in the
+                world. Don't wait-contact us today and let the adventure begin!!!!!!</p>
+            <address>
+                <p><strong> Address:</strong>Trinity Avenue 37, Accra, Ghana</p>
+                <p><strong>Phone:</strong> +233-544-821-788</p>
+                <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a>
+                </p>
+            </address>
+        </section>
+
+        <section>
+            <h3>Find Us</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509999!2d144.9537353153164!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f7b8a5b%3A0x5045675218ceed30!2sTrinity%20Avenue%2037%2C%20Accra%20Ghana!5e0!3m2!1sen!2sus!4v1616161616161"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee1.jpg" alt="Happy Employee 1" class="profile">
+                <figcaption>Dolcey Melody - Customer Experience Specialist</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Happy Employee 2" class="profile">
+                <figcaption>Dorcas Harrisons - Adventure Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Happy Employee 3" class="profile">
+                <figcaption>Harry Michaels - Operations Manager</figcaption>
+            </figure>
+        </section>
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <!-- Name -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br>
+        
+                <!-- Email -->
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br>
+        
+                <!-- Purpose -->
+                <label>Purpose of Message:</label><br>
+                <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                <label for="inquiry">General Inquiry</label><br>
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label><br>
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label><br>
+        
+                <!-- Message -->
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+        
+                <!-- Newsletter -->
+                <label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label><br>
+        
+                <!-- Submit Button -->
+                <button type="submit" id="submit-button">Submit Your Message</button>        
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-info">
+            <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
+        </section>
+        <section class="social-links">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <img src="images/facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <img src="images/twitter.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <img src="images/instagram.jpg" alt="Instagram">
+            </a>
+        </section>
+        <!-- Link to Contact Us Wireframe -->
+         <section class="wireframe-link">
+            <p><a href="images/contact-us-wireframe.jpg" target="_blank">View Contact Us Wireframe</a></p></a></p>
+    </footer>
+</body>
+
+</html>
