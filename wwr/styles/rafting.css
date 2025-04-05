@@ -395,3 +395,11 @@ figure figcaption {
     color: #555; /* Uses a soft color for text */
     font-weight: bold; /* Makes names stand out */
 }
+
+/* Google Map Styling */
+.google-map {
+    border: 0; /* Removes the border around the iframe */
+    width: 100%; /* Optional: Makes the iframe responsive */
+    max-width: 600px; /* Maintains the width limit */
+    height: 450px; /* Adjusts the height */
+}
