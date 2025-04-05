@@ -265,7 +265,7 @@ footer .social-links {
 }
 
 #contact-info address {
-    font-style: sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ccc;
