@@ -84,10 +84,10 @@ nav ul li a {
 }
 
 .history-image {
-    float: centre;
-    /* Align the image to the centre */
-    margin: 10px;
-    /* Add some space around the image */
+    display: block;
+    /* Makes the image a block element */
+    margin: 0 auto;
+    /* Centers the image horizontally */
     width: 100%;
     /* Adjust the size of the image */
     border-radius: 20px;
